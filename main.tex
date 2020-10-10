@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{COMP 551 P1}
+\author{Emma Auerbach, Cameron Cherif, Laetitia Fesselier }
+
+
+\begin{document}
+
+\maketitle
+
+\section*{Abstract}
+\paragraph{}
+To do last, cause it's our findings. 
+\section*{Introduction}
+\paragraph{}
+I'll fill this in with more detail as we go: (Task 1)Process generally: get, clean, change time resolution, and merge the datasets. (Task 2)Use dimensionality reduction to visualize using PCA and a clustering method. (Task 3)Then, prediction of hospitalization using KNN and decision trees on the search trends data.
+
+Anonymization based on differential privacy. \cite{Bavadekar et al}
+\section*{Datasets}
+
+\section*{Task 1}
+
+\subsection*{Dataset 1: Search Trends}
+\subsubsection*{Note}
+\paragraph{}
+In the Google doucumentation they say: "For each region and time resolution, we scale all the normalized popularities using the same scaling factor. In a single region, you can compare the relative popularity of two (or more) symptoms (at the same time resolution) over any time interval. However, you should not compare the values of symptom popularity across regions or time resolutions — the region and time resolution specific scalings make these comparisons meaningless."
+\paragraph{}
+Isnt't this exactly what they're telling us to do in the project?
+From the directions "Visualize the evolution of popularity of various symptoms across different regions over time." Anyways...
+\subsubsection*{Data Pre-Processing Steps}
+\paragraph{}
+What data did we take? The weekly and the daily data differ according to the Google documentation. 
+\paragraph{}
+What threshold did we use for sufficient non-zero entries? How do we justify this? Especially considering that the data has already been processed by Google. The data we have are not counts but "normalized popularity" of search terms, which might have zero entries due to the privacy and quality thresholds. 
+
+
+
+
+\subsection*{Dataset 2: COVID hospitalization cases}
+\subsubsection*{Data Pre-Processing Steps}
+\paragraph{What did we do?}
+
+\section*{Results}
+\section*{Discussion and Conclusion}
+\section*{Statement of Contributions}
+
+
+
+
+\section*{Task 2}
+
+
+\section*{Task 3}
+
+\begin{thebibliography}{}
+\bibitem{Bavadekar et al}
+	(or arXiv:2009.01265v1 [cs.CR] for this version)
+\end{thebibliography}
+\end{document}
